@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lojë për Çifte 🔥</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #111; color: #fff; padding: 40px; }
+    button { padding: 15px 30px; margin: 10px; font-size: 18px; border: none; border-radius: 10px; cursor: pointer; }
+    .truth { background-color: #3498db; color: white; }
+    .dare { background-color: #e74c3c; color: white; }
+    .box { margin-top: 30px; font-size: 24px; }
+  </style>
+</head>
+<body>
+  <h1>Lojë për Çifte ❤️‍🔥</h1>
+  <p>Zgjidh: E Vërtetë apo Guxim</p>
+  <button class="truth" onclick="showTruth()">E Vërtetë</button>
+  <button class="dare" onclick="showDare()">Guxim</button>
+  <div class="box" id="output"></div>
+
+  <script>
+    const truths = [
+      "A ke fantazuar ndonjëherë për dikë tjetër?",
+      "Cila pjesë e trupit të partnerit të ndez më shumë?",
+      "A ke ndonjë sekret që nuk ia ke treguar partnerit?",
+      "A ke bërë ndonjëherë seks në vend publik?",
+    ];
+
+    const dares = [
+      "Puthe partnerin në qafë për 10 sekonda.",
+      "Zgjidh një pjesë të trupit të partnerit për ta ledhatuar.",
+      "Thuaj një fantazi tëndën seksuale.",
+      "Bëje një pozicion seksi për 20 sekonda para partnerit.",
+    ];
+
+    function showTruth() {
+      const rand = Math.floor(Math.random() * truths.length);
+      document.getElementById("output").innerText = truths[rand];
+    }
+
+    function showDare() {
+      const rand = Math.floor(Math.random() * dares.length);
+      document.getElementById("output").innerText = dares[rand];
+    }
+  </script>
+</body>
+</html>
